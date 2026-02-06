@@ -1,0 +1,116 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.linha-vertical {
+    position: absolute;
+    left: 25%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.linha-horizontal {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+}
+
+.celula {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+
+/* Células */
+
+#c1 {
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 20%;
+}
+
+#c2 {
+    top: 0;
+    left: 25%;
+    width: 75%;
+    height: 20%;
+}
+
+#c3 {
+    top: 20%;
+    left: 0;
+    width: 25%;
+    height: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+#c4 {
+    top: 20%;
+    left: 25%;
+    width: 75%;
+    height: 80%;
+}
+
+
+/* Menu */
+
+#c3 a {
+    margin-bottom: 12px;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#c3 a:hover {
+    text-decoration: underline;
+}
+
+
+/* Conteúdo */
+
+#frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: none;
+}
+
+#loading {
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* Vídeo */
+
+#c2 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

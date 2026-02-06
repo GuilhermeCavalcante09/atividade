@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="linha-vertical"></div>
+        <div class="linha-horizontal"></div>
+
+        <!-- LOGO -->
+        <div id="c1" class="celula">
+            <img src="logo.png" style="max-width:120%;max-height:120%;">
+        </div>
+
+        <!-- VÍDEO -->
+        <div id="c2" class="celula">
+            <video autoplay muted loop playsinline>
+                <source src="video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+
+        <!-- MENU -->
+        <div id="c3" class="celula">
+            <a onclick="abrirLink(0)">Link 1 - Robôs com camuflagem</a>
+            <a onclick="abrirLink(1)">Link 2 - Setor espacial</a>
+            <a onclick="abrirLink(2)">Link 3 - Carros voadores</a>
+            <a onclick="abrirLink(3)">Link 4 - Setor financeiro</a>
+        </div>
+
+        <!-- CONTEÚDO -->
+        <div id="c4" class="celula">
+            <div id="loading">Clique em um link</div>
+            <iframe id="frame"></iframe>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
