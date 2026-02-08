@@ -2,8 +2,7 @@ const links = [
     "https://exame.com/ciencia/robos-com-camuflagem-inspirada-em-polvos-podem-se-tornar-realidade/",
     "https://exame.com/ciencia/as-inovacoes-que-marcaram-o-setor-espacial-em-2025/",
     "https://exame.com/invest/mercados/certificou-pode-voar-quando-os-carros-voadores-entrarao-em-operacao/",
-    "https://exame.com/future-of-money/ia-seguranca-a-formula-inegociavel-para-o-setor-financeiro-2/"
-
+    "https://exame.com/future-of-money/ia-seguranca-a-formula-inegociavel-para-o-setor-financeiro-2/",
     "https://guilhermecavalcante09.github.io/qr-/"
 ];
 
@@ -24,4 +23,5 @@ function abrirLink(index) {
         frame.style.display = "block";
     };
 }
+
 
