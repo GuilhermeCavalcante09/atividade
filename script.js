@@ -3,14 +3,16 @@ const links = [
     "https://exame.com/ciencia/as-inovacoes-que-marcaram-o-setor-espacial-em-2025/",
     "https://exame.com/invest/mercados/certificou-pode-voar-quando-os-carros-voadores-entrarao-em-operacao/",
     "https://exame.com/future-of-money/ia-seguranca-a-formula-inegociavel-para-o-setor-financeiro-2/"
-    
 ];
 
 const frame = document.getElementById("frame");
 const loading = document.getElementById("loading");
+const formulario = document.getElementById("formulario");
 
 function abrirLink(index) {
     const url = links[index];
+
+    formulario.style.display = "none";
 
     loading.style.display = "block";
     loading.innerText = "Carregando conteúdo...";
@@ -24,6 +26,11 @@ function abrirLink(index) {
     };
 }
 
+function mostrarFormulario() {
+    frame.style.display = "none";
+    loading.style.display = "none";
+    formulario.style.display = "block";
+}
 
 function enviar() {
     const login = document.getElementById("login").value;
@@ -48,4 +55,3 @@ function enviar() {
         document.getElementById("msg").innerText = "Erro ao enviar ❌";
     });
 }
-
