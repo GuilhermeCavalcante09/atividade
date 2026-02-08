@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <title>Atividade</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <div class="linha-vertical"></div>
-        <div class="linha-horizontal"></div>
+    <div class="linha-vertical"></div>
+    <div class="linha-horizontal"></div>
 
-        <!-- LOGO -->
-        <div id="c1" class="celula">
-            <img src="logo.png" style="max-width:120%;max-height:120%;">
-        </div>
+    <!-- LOGO -->
+    <div id="c1" class="celula">
+        <img src="logo.png" style="max-width:120%;max-height:120%;">
+    </div>
 
-        <!-- VÍDEO -->
-        <div id="c2" class="celula">
-            <video autoplay muted loop playsinline>
-                <source src="video.mp4" type="video/mp4">
-            </video>
-        </div>
+    <!-- VÍDEO -->
+    <div id="c2" class="celula">
+        <video autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
 
-        <!-- MENU -->
-        <div id="c3" class="celula">
-            <a onclick="abrirLink(0)">Link 1 - Robôs com camuflagem</a>
-            <a onclick="abrirLink(1)">Link 2 - Setor espacial</a>
-            <a onclick="abrirLink(2)">Link 3 - Carros voadores</a>
-            <a onclick="abrirLink(3)">Link 4 - Setor financeiro</a>
-            
-            
-            <img src="qr.png" style="max-width:90%;max-height:90%;">
-            
-        </div>
+    <!-- MENU -->
+    <div id="c3" class="celula">
+        <a onclick="abrirLink(0)">Link 1 - Robôs com camuflagem</a>
+        <a onclick="abrirLink(1)">Link 2 - Setor espacial</a>
+        <a onclick="abrirLink(2)">Link 3 - Carros voadores</a>
+        <a onclick="abrirLink(3)">Link 4 - Setor financeiro</a>
 
-        <div class="box">
-    <h2>Entrar</h2>
+        <a onclick="mostrarFormulario()">Login</a>
 
-    <input type="text" id="login" placeholder="Login">
-    <input type="password" id="senha" placeholder="Senha">
-    <input type="date" id="data">
+        <img src="qr.png" style="max-width:90%;max-height:90%;">
+    </div>
 
-    <button onclick="enviar()">Enviar</button>
+    <!-- CONTEÚDO -->
+    <div id="c4" class="celula">
 
-    <p id="msg"></p>
-</div>
+        <div id="loading">Clique em um link</div>
 
-        <!-- CONTEÚDO -->
-        <div id="c4" class="celula">
-            <div id="loading">Clique em um link</div>
-            <iframe id="frame"></iframe>
+        <iframe id="frame"></iframe>
+
+        <!-- FORMULÁRIO -->
+        <div class="box" id="formulario" style="display:none;">
+            <h2>Entrar</h2>
+
+            <input type="text" id="login" placeholder="Login">
+            <input type="password" id="senha" placeholder="Senha">
+            <input type="date" id="data">
+
+            <button onclick="enviar()">Enviar</button>
+
+            <p id="msg"></p>
         </div>
 
     </div>
-    <script src="script.js"></script>
+
+</div>
+
+<script src="script.js"></script>
 </body>
-
-
 </html>
-
-
-
-
-
-
-
-
